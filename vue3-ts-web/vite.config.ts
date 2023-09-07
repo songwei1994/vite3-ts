@@ -22,10 +22,10 @@ export default defineConfig({
     }),
   ],
   resolve: {
-    // 使用别名
     alias: {
       '@': path.resolve(__dirname, './src')
-    }
+    },
+    extensions: ['.vue', '.js', '.json', 'tsx', 'ts']
   },
   css: {
     preprocessorOptions: {

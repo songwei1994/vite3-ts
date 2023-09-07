@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="title">
     {{ pagesStore.pageCount }}
   </div>
   <el-button type="primary" @click="handleEdit('add',null)">增加</el-button>
@@ -34,7 +34,6 @@
       <span>
         <el-button @click="centerDialogVisible = false">取消</el-button>
         <el-button @click="centerDialogVisible = false" type="primary">{{ category=='add'?'添加数据':'修改' }}</el-button>
-
       </span>
     </template>
   </el-dialog>
@@ -91,7 +90,9 @@ const checkFilter = computed(() => (item: boolean) => {
 })
 </script>
   
-<style lang="scss" module>
-.container {}
+<style lang="scss" scoped>
+.title {
+  font-size:20px;
+}
 </style>
   
