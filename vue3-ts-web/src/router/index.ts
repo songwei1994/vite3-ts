@@ -51,6 +51,11 @@ const routes = [
                 component: Empty
             }
         ]
+    },
+    {
+        name: 'login',
+        path: '/login',
+        component: () => import('@/views/login.vue'),
     }
     // {
     //     path: '/home',

@@ -18,7 +18,7 @@
         <layout-tabs></layout-tabs>
       </el-header>
       
-      <p style="color: #999; padding: 0 20px 5px;">缓存组件：{{caches}}</p>
+      <!-- <p style="color: #999; padding: 0 20px 5px;">缓存组件：{{caches}}</p> -->
       <el-main id="app-main-scroller">
         <div style="padding: 20px;">
           <router-view v-slot="{ Component }">
@@ -45,20 +45,20 @@ const { caches } = useRouteCache()
 const menus = ref([
   {
     link: '/',
-    title: '首页'
+    title: '履历'
   },
-  {
-    link: '/article',
-    title: '文章列表'
-  },
-  {
-    link: '/child',
-    title: '多级缓存'
-  },
-  {
-    link: '/KeepScroll',
-    title: '记录滚动位置'
-  }
+  // {
+  //   link: '/article',
+  //   title: '文章列表'
+  // },
+  // {
+  //   link: '/child',
+  //   title: '多级缓存'
+  // },
+  // {
+  //   link: '/KeepScroll',
+  //   title: '记录滚动位置'
+  // }
 ])
 </script>
 

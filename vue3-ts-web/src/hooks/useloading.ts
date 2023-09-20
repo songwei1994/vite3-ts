@@ -9,7 +9,8 @@ interface AutoRequestOptions {
 }
 type AutoRequestResult<T, K extends Array<any>> = [Ref<boolean>, TApiFun<T, K>];
 /* 控制loading状态的自动切换hook */
-export function useAutoRequest<T, K extends any[] = any[]>(fun: TApiFun<T, K>, options?: AutoRequestOptions): AutoRequestResult<T, K> {
+export function useAutoRequest<T, K extends any[] = any[]>
+(fun: TApiFun<T, K>, options?: AutoRequestOptions): AutoRequestResult<T, K> {
     const { loading = false, onSuccess } = options || { loading: false };
 
     const requestLoading = ref(loading);

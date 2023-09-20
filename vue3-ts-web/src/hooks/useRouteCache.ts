@@ -3,6 +3,7 @@ import { useRoute } from 'vue-router'
 
 const caches = ref<string[]>([])
 let collect = false
+// 路由名称记录列表
 let cmpNames: { [index: string]: string } = {}
 
 export default function useRouteCache () {
